@@ -32,6 +32,7 @@
 
 package org.apache.arrow.flight.spark;
 
+import org.apache.arrow.memory.ArrowBuf;
 import org.apache.arrow.vector.BigIntVector;
 import org.apache.arrow.vector.BitVector;
 import org.apache.arrow.vector.DateDayVector;
@@ -59,7 +60,6 @@ import org.apache.spark.sql.vectorized.ColumnarArray;
 import org.apache.spark.sql.vectorized.ColumnarMap;
 import org.apache.spark.unsafe.types.UTF8String;
 
-import io.netty.buffer.ArrowBuf;
 
 /**
  * A column vector backed by Apache Arrow. Currently calendar interval type and map type are not
